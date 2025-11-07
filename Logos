@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Build Solutions - Logo Variations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 40px 20px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #1e40af;
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+    
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .logo-card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .logo-card.dark {
+        background: #1e293b;
+    }
+    
+    .logo-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e40af;
+        margin-bottom: 10px;
+    }
+    
+    .logo-card.dark .logo-title {
+        color: #60a5fa;
+    }
+    
+    .logo-description {
+        font-size: 13px;
+        color: #64748b;
+        margin-bottom: 20px;
+    }
+    
+    .logo-card.dark .logo-description {
+        color: #94a3b8;
+    }
+    
+    .logo-display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+        border: 2px dashed #e5e7eb;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    .logo-card.dark .logo-display {
+        border-color: #334155;
+    }
+    
+    .download-btn {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 100%;
+        transition: background 0.2s;
+    }
+    
+    .download-btn:hover {
+        background: #2563eb;
+    }
+    
+    .specs {
+        margin-top: 10px;
+        font-size: 11px;
+        color: #94a3b8;
+        font-family: monospace;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <h1>Know Build Solutions - Logo System</h1>
+
+```
+    <div class="logo-grid">
+        <!-- Original Stacked -->
+        <div class="logo-card">
+            <div class="logo-title">1. Original Stacked (Primary)</div>
+            <div class="logo-description">Use for: Website headers, presentations, print materials</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 400 120" width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(30, 30)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#1e40af" stroke-width="3" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#2563eb" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <circle cx="17" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="43" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="30" cy="18" r="2.5" fill="#1e40af"/>
+                    </g>
+                    <g transform="translate(110, 45)">
+                        <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#1e40af">KNOW</text>
+                        <text x="0" y="35" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#1e40af">BUILD</text>
+                        <text x="150" y="17" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#64748b" letter-spacing="1">SOLUTIONS</text>
+                    </g>
+                    <text x="110" y="90" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" letter-spacing="0.5">Technical Onboarding Experts</text>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('original', 'white')">Download SVG</button>
+            <div class="specs">400 × 120px | Full color | White background</div>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="logo-card">
+            <div class="logo-title">2. Horizontal Layout</div>
+            <div class="logo-description">Use for: Email signatures, narrow headers, navigation bars</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 500 80" width="500" height="80" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(10, 10)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#1e40af" stroke-width="3" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#2563eb" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <circle cx="17" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="43" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="30" cy="18" r="2.5" fill="#1e40af"/>
+                    </g>
+                    <g transform="translate(90, 27)">
+                        <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1e40af">KNOW BUILD</text>
+                        <text x="215" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#64748b">SOLUTIONS</text>
+                    </g>
+                    <text x="90" y="60" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#94a3b8" letter-spacing="0.5">Technical Onboarding Experts</text>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('horizontal', 'white')">Download SVG</button>
+            <div class="specs">500 × 80px | Full color | White background</div>
+        </div>
+
+        <!-- Icon Only -->
+        <div class="logo-card">
+            <div class="logo-title">3. Icon Only (App Icon)</div>
+            <div class="logo-description">Use for: Favicons, app icons, social media avatars, small spaces</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 80 80" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="80" fill="white" rx="8"/>
+                    <g transform="translate(10, 10)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#1e40af" stroke-width="4" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#2563eb" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <circle cx="17" cy="36" r="3" fill="#1e40af"/>
+                        <circle cx="43" cy="36" r="3" fill="#1e40af"/>
+                        <circle cx="30" cy="18" r="3" fill="#1e40af"/>
+                    </g>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('icon', 'white')">Download SVG</button>
+            <div class="specs">80 × 80px | Full color | Square format</div>
+        </div>
+
+        <!-- Monochrome Blue -->
+        <div class="logo-card">
+            <div class="logo-title">4. Monochrome (Single Color)</div>
+            <div class="logo-description">Use for: One-color printing, embossing, engraving, simple applications</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 500 80" width="500" height="80" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(10, 10)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#1e40af" stroke-width="3" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <circle cx="17" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="43" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="30" cy="18" r="2.5" fill="#1e40af"/>
+                    </g>
+                    <g transform="translate(90, 40)">
+                        <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1e40af">KNOW BUILD SOLUTIONS</text>
+                    </g>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('monochrome', 'white')">Download SVG</button>
+            <div class="specs">500 × 80px | Single color (#1e40af) | White background</div>
+        </div>
+
+        <!-- Dark Background Version -->
+        <div class="logo-card dark">
+            <div class="logo-title">5. Inverted (Dark Background)</div>
+            <div class="logo-description">Use for: Dark mode interfaces, dark hero sections, presentations</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 500 80" width="500" height="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="500" height="80" fill="#1e293b"/>
+                    <g transform="translate(10, 10)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#60a5fa" stroke-width="3" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#93c5fd" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <circle cx="17" cy="36" r="2.5" fill="#60a5fa"/>
+                        <circle cx="43" cy="36" r="2.5" fill="#60a5fa"/>
+                        <circle cx="30" cy="18" r="2.5" fill="#60a5fa"/>
+                    </g>
+                    <g transform="translate(90, 27)">
+                        <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">KNOW BUILD</text>
+                        <text x="215" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#cbd5e1">SOLUTIONS</text>
+                    </g>
+                    <text x="90" y="60" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#94a3b8" letter-spacing="0.5">Technical Onboarding Experts</text>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('inverted', 'dark')">Download SVG</button>
+            <div class="specs">500 × 80px | Light colors | Dark background (#1e293b)</div>
+        </div>
+
+        <!-- Compact Badge -->
+        <div class="logo-card">
+            <div class="logo-title">6. Compact Badge</div>
+            <div class="logo-description">Use for: Badges, stamps, small promotional materials, stickers</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="95" fill="white" stroke="#1e40af" stroke-width="3"/>
+                    <g transform="translate(70, 50)">
+                        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#1e40af" stroke-width="3" rx="4"/>
+                        <rect x="8" y="38" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="34" y="38" width="18" height="14" fill="#60a5fa" rx="2"/>
+                        <rect x="8" y="20" width="18" height="14" fill="#2563eb" rx="2"/>
+                        <rect x="34" y="20" width="18" height="14" fill="#3b82f6" rx="2"/>
+                        <rect x="21" y="8" width="18" height="14" fill="#1e40af" rx="2"/>
+                        <circle cx="17" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="43" cy="36" r="2.5" fill="#1e40af"/>
+                        <circle cx="30" cy="18" r="2.5" fill="#1e40af"/>
+                    </g>
+                    <text x="100" y="135" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1e40af" text-anchor="middle">KNOW BUILD</text>
+                    <text x="100" y="155" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SOLUTIONS</text>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('badge', 'white')">Download SVG</button>
+            <div class="specs">200 × 200px | Full color | Circular badge</div>
+        </div>
+
+        <!-- Text Only -->
+        <div class="logo-card">
+            <div class="logo-title">7. Text Only (No Icon)</div>
+            <div class="logo-description">Use for: Headlines, document headers, minimalist applications</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 450 60" width="450" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="35" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#1e40af">KNOW BUILD</text>
+                    <text x="235" y="35" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" fill="#64748b">SOLUTIONS</text>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('text-only', 'white')">Download SVG</button>
+            <div class="specs">450 × 60px | Text only | White background</div>
+        </div>
+
+        <!-- Favicon -->
+        <div class="logo-card">
+            <div class="logo-title">8. Favicon (16×16 / 32×32)</div>
+            <div class="logo-description">Use for: Browser tabs, bookmarks, simplified web icons</div>
+            <div class="logo-display">
+                <svg viewBox="0 0 32 32" width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" fill="#1e40af"/>
+                    <g transform="translate(6, 6)">
+                        <rect x="0" y="0" width="20" height="20" fill="none" stroke="white" stroke-width="1.5" rx="2"/>
+                        <rect x="3" y="13" width="6" height="4" fill="#60a5fa" rx="1"/>
+                        <rect x="11" y="13" width="6" height="4" fill="#93c5fd" rx="1"/>
+                        <rect x="3" y="7" width="6" height="4" fill="#3b82f6" rx="1"/>
+                        <rect x="11" y="7" width="6" height="4" fill="#60a5fa" rx="1"/>
+                        <rect x="7" y="3" width="6" height="4" fill="white" rx="1"/>
+                    </g>
+                </svg>
+            </div>
+            <button class="download-btn" onclick="downloadSVG('favicon', 'blue')">Download SVG</button>
+            <div class="specs">32 × 32px | Simplified | Blue background</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h2 style="color: #1e40af; margin-bottom: 15px;">Logo Usage Guidelines</h2>
+        <div style="text-align: left; max-width: 800px; margin: 0 auto; font-size: 14px; color: #475569; line-height: 1.8;">
+            <p style="margin-bottom: 15px;"><strong>Primary Colors:</strong></p>
+            <ul style="margin-bottom: 20px; padding-left: 20px;">
+                <li><strong>#1e40af</strong> - Primary Blue (main brand color)</li>
+                <li><strong>#3b82f6</strong> - Secondary Blue (accents)</li>
+                <li><strong>#60a5fa</strong> - Light Blue (highlights)</li>
+                <li><strong>#64748b</strong> - Gray (supporting text)</li>
+            </ul>
+            <p style="margin-bottom: 15px;"><strong>Minimum Sizes:</strong></p>
+            <ul style="margin-bottom: 20px; padding-left: 20px;">
+                <li>Horizontal/Stacked logos: 120px width minimum</li>
+                <li>Icon only: 24px minimum</li>
+                <li>Favicon: 16px × 16px</li>
+            </ul>
+            <p style="margin-bottom: 15px;"><strong>Clear Space:</strong> Maintain clear space equal to the height of the icon on all sides</p>
+            <p><strong>Don'ts:</strong> Don't distort, rotate, add effects, or change colors outside approved palette</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function downloadSVG(variant, background) {
+        const card = event.target.closest('.logo-card');
+        const svg = card.querySelector('svg');
+        const svgData = new XMLSerializer().serializeToString(svg);
+        const blob = new Blob([svgData], { type: 'image/svg+xml' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `know-build-logo-${variant}-${background}.svg`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
+</script>
+```
+
+</body>
+</html>
