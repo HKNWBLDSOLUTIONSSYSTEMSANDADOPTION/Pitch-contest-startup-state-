@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Onboarding Quick Checklist - Know Build Solutions</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+
+```
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.5;
+        color: #1a1a1a;
+        background: #f5f5f5;
+        padding: 20px;
+    }
+    
+    .page {
+        max-width: 850px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .header {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        color: white;
+        padding: 32px 40px;
+        border-bottom: 4px solid #1e3a8a;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .logo-section h1 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    
+    .logo-section .subtitle {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+    
+    .title-section {
+        text-align: right;
+    }
+    
+    .title-section h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    
+    .title-section .tagline {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+    
+    .at-glance {
+        background: #eff6ff;
+        border-left: 4px solid #3b82f6;
+        padding: 20px 40px;
+        font-size: 12px;
+    }
+    
+    .at-glance strong {
+        color: #1e40af;
+    }
+    
+    .content {
+        padding: 0 40px 40px 40px;
+    }
+    
+    .section {
+        margin-top: 32px;
+    }
+    
+    .section-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e5e7eb;
+    }
+    
+    .section-icon {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1e40af;
+    }
+    
+    .section-time {
+        font-size: 13px;
+        color: #6b7280;
+        margin-left: auto;
+    }
+    
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        padding: 8px;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+    
+    .checklist-item:hover {
+        background: #f9fafb;
+    }
+    
+    .checkbox {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #3b82f6;
+        border-radius: 4px;
+        margin-right: 12px;
+        flex-shrink: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+    }
+    
+    .checkbox:hover {
+        background: #eff6ff;
+    }
+    
+    .checkbox.checked {
+        background: #3b82f6;
+        border-color: #3b82f6;
+    }
+    
+    .checkbox.checked::after {
+        content: '✓';
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .item-text {
+        flex: 1;
+        font-size: 13px;
+    }
+    
+    .item-text strong {
+        color: #1a1a1a;
+        font-weight: 600;
+    }
+    
+    .callout {
+        background: #fef3c7;
+        border-left: 4px solid #f59e0b;
+        padding: 20px;
+        margin-top: 32px;
+        border-radius: 4px;
+    }
+    
+    .callout.pitfalls {
+        background: #fee2e2;
+        border-left-color: #ef4444;
+    }
+    
+    .callout-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #1a1a1a;
+    }
+    
+    .callout-content {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .callout-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .callout-list li {
+        margin-bottom: 8px;
+        padding-left: 20px;
+        position: relative;
+    }
+    
+    .callout-list li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+    }
+    
+    .footer {
+        background: #1e293b;
+        color: white;
+        padding: 24px 40px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .footer-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    
+    .footer-contact {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+    
+    .footer-contact a {
+        color: #60a5fa;
+        text-decoration: none;
+    }
+    
+    .controls {
+        text-align: center;
+        padding: 20px;
+        background: white;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .controls button {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0 8px;
+        transition: background 0.2s;
+    }
+    
+    .controls button:hover {
+        background: #2563eb;
+    }
+    
+    .progress-bar {
+        background: #e5e7eb;
+        height: 8px;
+        border-radius: 4px;
+        margin: 16px 40px 0 40px;
+        overflow: hidden;
+    }
+    
+    .progress-fill {
+        background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+        height: 100%;
+        width: 0%;
+        transition: width 0.3s ease;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="controls no-print">
+        <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+        <button onclick="resetChecklist()">🔄 Reset All</button>
+        <button onclick="checkAll()">✓ Check All</button>
+    </div>
+
+```
+<div class="page">
+    <div class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>Know Build Solutions</h1>
+                <div class="subtitle">Technical Onboarding Checklist</div>
+            </div>
+            <div class="title-section">
+                <h2>SaaS Onboarding Quick Checklist</h2>
+                <div class="tagline">Get Live in 60 Minutes</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+    
+    <div class="at-glance">
+        <strong>Target audience:</strong> IT architects, engineers, and platform owners &nbsp;•&nbsp;
+        <strong>Goal:</strong> Production-ready baseline in ~60 minutes; adoption momentum in 2 weeks &nbsp;•&nbsp;
+        <strong>How to use:</strong> Follow top→bottom. Check items as you complete them.
+    </div>
+    
+    <div class="content">
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">📂</span>
+                <span class="section-title">PRE-WORK</span>
+                <span class="section-time">5–10 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Confirm domain & org name</strong> — Verified tenant/domain ready for SSO.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>List core admins (2–3)</strong> — Names + emails for initial access.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Gather SSO details</strong> — IdP metadata, test user, and SSO owner contact.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Prepare billing contact</strong> — Card or PO contact for account activation.</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">⚙️</span>
+                <span class="section-title">CORE SETUP</span>
+                <span class="section-time">15–20 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Create organization / workspace</strong> — Set timezone and default language.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Invite core admins</strong> — Assign Admin, Integrator, Viewer roles.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Configure basic org settings</strong> — Company logo, support email, telemetry toggle.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Set password policy</strong> — Minimum length and rotation rules.</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">🔒</span>
+                <span class="section-title">SECURITY & ACCESS</span>
+                <span class="section-time">10–15 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Enable SSO and test with 1 user</strong> — Confirm sign-in flow and provisioning.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Enable MFA for admins</strong> — Enforce at least 2FA for admin roles.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Define role templates</strong> — Admin, Platform Engineer, Developer, Read-Only.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Create emergency access account</strong> — Stored in vault with access owners documented.</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">🔗</span>
+                <span class="section-title">INTEGRATIONS & AUTOMATION</span>
+                <span class="section-time">5–10 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Connect directory (LDAP/SCIM/Okta/Azure AD)</strong> — Sync 1 test group.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Add one monitoring/alerting integration</strong> — e.g., PagerDuty, Slack channel.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Connect source control (optional)</strong> — Link Git provider for CI hooks.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Create webhook/test API key</strong> — Validate through a smoke test.</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">👥</span>
+                <span class="section-title">ADOPTION & FIRST PROJECT</span>
+                <span class="section-time">10–20 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Create sample project/repo</strong> — Add 3 sample items (tickets, resources).</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Invite 3 pilot users</strong> — One engineer, one SRE, one product owner.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Run 30-minute demo session</strong> — Walk through tasks and collect feedback.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Schedule 1st review (7 days)</strong> — Capture adoption issues and next steps.</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">✅</span>
+                <span class="section-title">VERIFICATION & HANDOFF</span>
+                <span class="section-time">5 minutes</span>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Run smoke checklist</strong> — Login, key integration test, alert round-trip.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Document owner & runbook link</strong> — Location in wiki and oncall contact.</div>
+            </div>
+            <div class="checklist-item">
+                <div class="checkbox" onclick="toggleCheck(this)"></div>
+                <div class="item-text"><strong>Snapshot role/permission settings</strong> — Save export for rollback.</div>
+            </div>
+        </div>
+        
+        <div class="callout">
+            <div class="callout-title">Quick 2-Week Adoption Playbook</div>
+            <div class="callout-content">
+                <ul class="callout-list">
+                    <li><strong>Day 3:</strong> Send adoption checklist to pilot users + collect feedback.</li>
+                    <li><strong>Day 7:</strong> Run adoption review; apply 2 highest-impact fixes.</li>
+                    <li><strong>Day 14:</strong> Open to org with onboarding office hours.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="callout pitfalls">
+            <div class="callout-title">Common Pitfalls</div>
+            <div class="callout-content">
+                <ul class="callout-list">
+                    <li><strong>Don't invite the whole org first.</strong> Start small to avoid permission churn.</li>
+                    <li><strong>Test SSO first.</strong> Misconfigured SSO is the top cause of onboarding delays.</li>
+                    <li><strong>Document rollback steps.</strong> Snapshot roles and critical settings before major changes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-title">Need hands-on help?</div>
+        <div class="footer-contact">
+            Book a free 30-minute onboarding review: <a href="mailto:onboarding@knowbuild.com">onboarding@knowbuild.com</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleCheck(element) {
+        element.classList.toggle('checked');
+        updateProgress();
+        saveState();
+    }
+    
+    function updateProgress() {
+        const checkboxes = document.querySelectorAll('.checkbox');
+        const checked = document.querySelectorAll('.checkbox.checked');
+        const percentage = (checked.length / checkboxes.length) * 100;
+        document.getElementById('progressBar').style.width = percentage + '%';
+    }
+    
+    function resetChecklist() {
+        if (confirm('Reset all checkboxes? This cannot be undone.')) {
+            document.querySelectorAll('.checkbox').forEach(cb => {
+                cb.classList.remove('checked');
+            });
+            updateProgress();
+            saveState();
+        }
+    }
+    
+    function checkAll() {
+        document.querySelectorAll('.checkbox').forEach(cb => {
+            cb.classList.add('checked');
+        });
+        updateProgress();
+        saveState();
+    }
+    
+    function saveState() {
+        const states = [];
+        document.querySelectorAll('.checkbox').forEach(cb => {
+            states.push(cb.classList.contains('checked'));
+        });
+        localStorage.setItem('checklistState', JSON.stringify(states));
+    }
+    
+    function loadState() {
+        const saved = localStorage.getItem('checklistState');
+        if (saved) {
+            const states = JSON.parse(saved);
+            const checkboxes = document.querySelectorAll('.checkbox');
+            states.forEach((checked, index) => {
+                if (checked && checkboxes[index]) {
+                    checkboxes[index].classList.add('checked');
+                }
+            });
+            updateProgress();
+        }
+    }
+    
+    // Load saved state on page load
+    loadState();
+</script>
+```
+
+</body>
+</html>
